@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFF"
+    android:id="@+id/icon_pack_item_rl">
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="#00000000"
+        android:visibility="visible"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:gravity="center|left"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:layout_alignBottom="@+id/set_iconpack_btn"
+        android:layout_toRightOf="@+id/button1"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/set_iconpack_btn"
+        android:layout_toStartOf="@+id/set_iconpack_btn" />
+    <at.markushi.ui.CircleButton
+        android:id="@+id/set_iconpack_btn"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:src="@drawable/ic_action_save"
+        app:cb_color="#2196F3"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/set_iconpack_btn"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="@android:color/darker_gray" />
+
+</RelativeLayout>

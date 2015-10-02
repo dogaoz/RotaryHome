@@ -1,0 +1,159 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="#FFF"
+    tools:context="com.dogaozkaraca.rotaryhome.rss_feed_settings">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/myfeed"
+        android:layout_height="200dp">
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="7dp"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:text="My News Sources"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#000"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="7dp"
+        android:background="#000" />
+
+    <ListView
+        android:id="@+id/ListView1"
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="1"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/view1">
+
+    </ListView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/countryfeed"
+        android:layout_below="@id/myfeed"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="7dp"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:text="News Sources by Country"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#000"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:id="@+id/view2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="7dp"
+            android:background="#000" />
+
+        <GridView
+            android:id="@+id/GridView2"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:numColumns="3"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:paddingRight="@dimen/activity_horizontal_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/view2"
+            android:layout_alignParentBottom="true">
+
+        </GridView>
+    </RelativeLayout>
+    <dogaozkaraca.SwipeRefreshLayoutRotary
+        android:id="@+id/swipe_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        android:visibility="gone"
+        android:id="@+id/listViewSearcher"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+
+    </dogaozkaraca.SwipeRefreshLayoutRotary>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/noresultsfound"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/loading_bg_oval"
+        android:visibility="gone"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="No results found!\nBut, we can add missing news source for you."
+            android:textColor="#000"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/noresultsfound_text"
+            />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:id="@+id/noresultsfound_button"
+            android:layout_below="@id/noresultsfound_text"
+            android:text="Click here to send request"
+            android:background="#00FF00"
+            android:textSize="16dp"
+            android:paddingBottom="5dp"
+
+            android:layout_alignLeft="@+id/noresultsfound_text"
+            android:layout_alignStart="@+id/noresultsfound_text"
+            android:layout_alignRight="@+id/noresultsfound_text"
+            android:layout_alignEnd="@+id/noresultsfound_text" />
+    </RelativeLayout>
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:id="@+id/webView1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"/>
+</RelativeLayout>

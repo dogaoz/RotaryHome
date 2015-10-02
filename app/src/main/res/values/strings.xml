@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Rotary Home</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_purchases">My Account</string>
+    <string name="title_activity_rss_feed_settings">News Sources</string>
+    <string name="title_activity_rotary_signup">Sign up for RotaryHome</string>
+    <string name="title_activity_rotary_teacher">RotaryTeacher</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3300497447700135/8516884946</string>
+    <string name="title_activity_settings_more">More</string>
+</resources>

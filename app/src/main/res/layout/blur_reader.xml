@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+
+    >
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/itemRL"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:background="@drawable/abc_menu_dropdown_panel_holo_light"
+            android:layout_marginLeft="1dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            >
+
+            <ImageView
+                android:id="@+id/articlePicture"
+                android:layout_width="wrap_content"
+                android:layout_height="240dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/bg_card"
+                android:scaleType="centerCrop" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="120dp"
+                android:id="@+id/titleBg"
+                android:layout_below="@id/articlePicture"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:background="#EBECEEED"  >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@+id/retweets_resharestext"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true">
+
+                    <t.forgotten
+                        android:id="@+id/articleHeaderText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:shadowColor="#ffffffff"
+                        android:shadowDx="2"
+                        android:text=""
+                        android:gravity="center"
+                        android:background="#EBECEEED"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#000000"
+                        android:textSize="18sp" />
+
+                    <t.AutoResizeTextView
+                        android:id="@+id/articleText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="15dp"
+                        android:shadowColor="#ffffffff"
+                        android:shadowDx="2"
+                        android:shadowDy="1"
+                        android:shadowRadius="2"
+                        android:textColor="#000000"
+                        android:layout_below="@+id/articleHeaderText"
+                        android:autoLink="web"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentEnd="true"
+
+                        android:layout_alignParentLeft="true"
+                         />
+
+                </RelativeLayout>
+
+
+                <t.forgotten
+                    android:id="@+id/retweets_resharestext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignTop="@+id/likes_favs"
+                    android:layout_marginRight="17dp"
+                    android:layout_toLeftOf="@+id/likes_favs"
+                    android:text="150"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/retweets_reshares"
+
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/retweets_resharestext"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_action_rt_off" />
+
+                <t.forgotten
+                    android:id="@+id/likes_favstext"
+                    android:layout_width="wrap_content"
+                    android:layout_height="50dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignTop="@+id/likes_favs"
+                    android:gravity="center"
+                    android:text="150"
+                    android:textAppearance="?android:attr/textAppearanceMedium"
+                    android:textColor="#000" />
+
+                <ImageButton
+                    android:id="@+id/likes_favs"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/likes_favstext"
+                    android:background="#00000000"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_action_fave_off" />
+            </RelativeLayout>
+
+
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/postImageIncluded"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                app:border_color="#EEEEEE"
+                app:border_width="2dp"
+                app:shadow="true" />
+
+            <t.forgotten
+                android:id="@+id/openInAppText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:shadowColor="#ffffffff"
+                android:shadowDx="2"
+                android:text="Show details in app!"
+                android:gravity="center"
+                android:layout_below="@+id/titleBg"
+                android:background="#EBECEEED"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:textColor="#000080"
+                android:textSize="18sp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+
+            <WebView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/webView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_above="@+id/sep" />
+
+            <RelativeLayout
+                android:id="@+id/sep"
+                android:layout_width="wrap_content"
+            android:layout_height="50dp"
+                android:layout_marginBottom="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/savebutton"
+
+                    android:background="@drawable/ic_action_save2"/>
+                <Button
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/sharebutton"
+                    android:layout_toRightOf="@+id/savebutton"
+                    android:background="@drawable/ic_action_share2"/>
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:id="@+id/feedItemType"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/twitter_feeditem"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+</RelativeLayout>
+
+</RelativeLayout>

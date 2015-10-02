@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dofeed_settings_main"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#FFEFF0FB"
+    tools:context=".Do_feed_Settings" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tiprl"
+        android:background="#00FF00"
+        android:layout_marginBottom="@dimen/activity_vertical_margin"
+        android:layout_marginTop="@dimen/activity_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:text="Touch to the buttons that describes itself to change it's settings."
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:layout_below="@+id/textView13"
+            android:layout_centerHorizontal="true" />
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="to enable or disable any of them"
+            android:textColor="#FFF"
+            android:paddingBottom="10dp"
+            android:textSize="16dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_alignLeft="@+id/textView2"
+            android:layout_alignStart="@+id/textView2" />
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Touch to"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:layout_below="@+id/textView1"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1" />
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="or"
+            android:textColor="#FFF"
+            android:textSize="16dp"
+            android:layout_below="@+id/textView1"
+            android:layout_toRightOf="@+id/imageView3"
+            android:layout_toEndOf="@+id/imageView3" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Tip :"
+
+            android:id="@+id/textView13"
+            android:layout_alignParentTop="true"
+            android:layout_alignLeft="@+id/textView1"
+            android:layout_alignStart="@+id/textView1" />
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageView3"
+            android:background="@drawable/fake_checkbox_bg"
+            android:src="@drawable/fake_checkbox_bg_true"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:layout_toEndOf="@+id/textView2" />
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:id="@+id/imageView4"
+            android:background="@drawable/fake_checkbox_bg"
+            android:src="@drawable/fake_checkbox_bg_false"
+            android:layout_above="@+id/textView4"
+            android:layout_toRightOf="@+id/textView6"
+            android:layout_toEndOf="@+id/textView6" />
+    </RelativeLayout>
+    <GridView
+        android:id="@+id/GridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:numColumns="3"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tiprl"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+    </GridView>
+</RelativeLayout>

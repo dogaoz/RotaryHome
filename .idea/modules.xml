@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/CircleButton/library/CircleButtonLibrary.iml" filepath="$PROJECT_DIR$/CircleButton/library/CircleButtonLibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/RotaryHome.iml" filepath="$PROJECT_DIR$/RotaryHome.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/blurringview/blurringview.iml" filepath="$PROJECT_DIR$/blurringview/blurringview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circleindicator/circleIndicatorForFirstSetup.iml" filepath="$PROJECT_DIR$/circleindicator/circleIndicatorForFirstSetup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/circularImageViewReal/circularImageViewReal.iml" filepath="$PROJECT_DIR$/circularImageViewReal/circularImageViewReal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dataDroid/dataDroid.iml" filepath="$PROJECT_DIR$/dataDroid/dataDroid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/facebook/facebook.iml" filepath="$PROJECT_DIR$/facebook/facebook.iml" />
+      <module fileurl="file://$PROJECT_DIR$/foursquare_Library/foursquare_Library.iml" filepath="$PROJECT_DIR$/foursquare_Library/foursquare_Library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/imageViewEx/imageViewEx.iml" filepath="$PROJECT_DIR$/imageViewEx/imageViewEx.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CircleButton/library/library2.iml" filepath="$PROJECT_DIR$/CircleButton/library/library2.iml" />
+    </modules>
+  </component>
+</project>

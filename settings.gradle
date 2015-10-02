@@ -1,0 +1,11 @@
+include ':app', ':library2', ':CircleButtonLibrary', ':circleButtonLibrary', ':blurringview', ':circleIndicatorForFirstSetup', ':facebook'
+project(':library2').projectDir = new File('CircleButton/library')
+include ':circularImageViewReal'
+include ':foursquare_Library'
+include ':dataDroid'
+include ':imageViewEx'
+project(':CircleButtonLibrary').projectDir = new File('CircleButton/library')
+project(':circleButtonLibrary').projectDir = new File('CircleButton/library')
+project(':circleIndicatorForFirstSetup').projectDir = new File('circleindicator')
+
+

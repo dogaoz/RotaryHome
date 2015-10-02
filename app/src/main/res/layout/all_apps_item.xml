@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/all_apps_item_rl">
+
+    <ImageButton
+        android:id="@+id/button1"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="#00000000"
+        android:scaleType="fitXY"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <t.forgotten
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center|top"
+        android:textSize="14sp"
+        android:textColor="#FFF"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/button1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:id="@+id/imageButton01"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/fake_checkbox_bg"
+        android:scaleType="fitXY"
+        android:layout_centerVertical="true"
+        android:visibility="gone"
+        android:layout_alignRight="@+id/button1"
+        android:layout_alignEnd="@+id/button1" />
+
+</RelativeLayout>

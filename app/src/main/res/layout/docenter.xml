@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/docenter_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00000000"
+    android:clickable="true"
+    android:visibility="gone">
+    <View
+        android:id="@+id/reveal_viewD"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#0000FF"
+        android:visibility="invisible"
+        />
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/insideDoCenter_content"
+    android:visibility="invisible">
+    <t.forgotten
+        android:id="@+id/textViewSaved"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="7dp"
+       
+        android:text="Saved Articles"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FFFFFF" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/viewSaved"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textViewSaved"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginRight="17dp"
+        android:background="#FFFFFF" />
+    <GridView
+        android:id="@+id/gridViewSavedArticles"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/viewSaved"
+        android:divider="@null"
+        android:minHeight="150dp"
+        android:numColumns="1"
+        android:background="#00000000"
+        android:fastScrollEnabled="false"
+        >
+
+    </GridView>
+</RelativeLayout>
+
+
+</RelativeLayout>

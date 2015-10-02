@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/doga/Android Development/RotaryHome/imageViewEx/src/main/res"><file name="ic_launcher" path="/Users/doga/Android Development/RotaryHome/imageViewEx/src/main/res/drawable-hdpi/ic_launcher.png" qualifiers="hdpi" type="drawable"/><file name="ic_launcher" path="/Users/doga/Android Development/RotaryHome/imageViewEx/src/main/res/drawable-ldpi/ic_launcher.png" qualifiers="ldpi" type="drawable"/><file name="ic_launcher" path="/Users/doga/Android Development/RotaryHome/imageViewEx/src/main/res/drawable-mdpi/ic_launcher.png" qualifiers="mdpi" type="drawable"/><file name="ic_launcher" path="/Users/doga/Android Development/RotaryHome/imageViewEx/src/main/res/drawable-xhdpi/ic_launcher.png" qualifiers="xhdpi" type="drawable"/><file path="/Users/doga/Android Development/RotaryHome/imageViewEx/src/main/res/values/attribs.xml" qualifiers=""><declare-styleable name="ImageViewEx">
+        <attr format="boolean" name="adjustViewBounds"/>
+        <attr format="reference|color" name="emptyDrawable"/>
+
+        <attr format="enum" name="fillDirection">
+            <enum name="none" value="0"/>
+            <enum name="horizontal" value="1"/>
+            <enum name="vertical" value="2"/>
+        </attr>
+    </declare-styleable></file><file path="/Users/doga/Android Development/RotaryHome/imageViewEx/src/main/res/values/strings.xml" qualifiers=""><string name="app_name">ImageViewEx</string></file></source><source path="/Users/doga/Android Development/RotaryHome/imageViewEx/build/generated/res/rs/release"/><source path="/Users/doga/Android Development/RotaryHome/imageViewEx/build/generated/res/generated/release"/></dataSet><dataSet config="release"><source path="/Users/doga/Android Development/RotaryHome/imageViewEx/src/release/res"/></dataSet><mergedItems><configuration qualifiers=""><declare-styleable name="ImageViewEx"><attr format="boolean" name="adjustViewBounds"/><attr format="reference|color" name="emptyDrawable"/><attr format="enum" name="fillDirection"><enum name="none" value="0"/><enum name="horizontal" value="1"/><enum name="vertical" value="2"/></attr></declare-styleable></configuration></mergedItems></merger>

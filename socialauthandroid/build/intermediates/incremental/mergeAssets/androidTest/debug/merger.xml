@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="debug"><source path="/Volumes/DATA/Android Development/RotaryHome/socialauthandroid/build/intermediates/bundles/debug/assets"><file name="oauth_consumer.properties" path="/Volumes/DATA/Android Development/RotaryHome/socialauthandroid/build/intermediates/bundles/debug/assets/oauth_consumer.properties"/></source></dataSet><dataSet config="main"><source path="/Volumes/DATA/Android Development/RotaryHome/socialauthandroid/src/androidTest/assets"/></dataSet></merger>

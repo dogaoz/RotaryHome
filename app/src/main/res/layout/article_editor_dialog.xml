@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:background="#F0ECEEED"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/loadingRelativeLayout"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentRight="true"
+    android:layout_centerVertical="true">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/editText"
+        android:layout_alignBottom="@+id/textView18"
+        android:layout_toRightOf="@+id/textView18"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        style="@android:style/Theme.Holo.Dialog"/>
+
+    <t.forgotten
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Article Title :"
+        android:textColor="#000000"
+
+        android:id="@+id/textView18"
+        android:layout_below="@id/view1"
+        android:layout_marginTop="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+
+    <t.forgotten
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Article URL :"
+        android:textColor="#000000"
+        android:id="@+id/textView20"
+        android:layout_marginTop="34dp"
+        android:layout_below="@+id/editText"
+        android:layout_toLeftOf="@+id/editText2"
+        android:layout_toStartOf="@+id/editText2" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/editText2"
+        android:editable="false"
+        android:layout_alignTop="@+id/textView20"
+        android:layout_toRightOf="@+id/textView18"
+        android:layout_alignRight="@+id/editText"
+        android:layout_alignEnd="@+id/editText"
+        android:maxLines="1"
+        android:singleLine="true"
+        android:ellipsize="end"
+        style="@android:style/Theme.Holo.Dialog"/>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/editText2"
+    android:layout_marginTop="30dp"
+    android:layout_centerHorizontal="true"
+    android:id="@+id/relativeLayout2">
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text=""
+        android:background="@drawable/ic_action_save2"
+        android:id="@+id/button5"/>
+    <Button
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:text=""
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/remove_article"
+        android:id="@+id/button6"
+        android:layout_alignTop="@+id/button5"
+        android:layout_toRightOf="@+id/button5"
+        android:layout_toEndOf="@+id/button5" />
+</RelativeLayout>
+
+    <t.forgotten
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Edit Article"
+        android:textColor="#000"
+        android:gravity="center"
+        android:layout_marginTop="12dp"
+        android:id="@+id/textView21"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:id="@+id/view1"
+        android:background="#000"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/textView21"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <!--
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loadingText"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id" />
+     -->
+</RelativeLayout>

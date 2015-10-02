@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageViewEx"><attr format="boolean" name="adjustViewBounds"/><attr format="reference|color" name="emptyDrawable"/><attr format="enum" name="fillDirection"><enum name="none" value="0"/><enum name="horizontal" value="1"/><enum name="vertical" value="2"/></attr></declare-styleable>
+    <!-- From: file:/Users/doga/Android%20Development/RotaryHome/imageViewEx/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="app_name">ImageViewEx</string>
+</resources>

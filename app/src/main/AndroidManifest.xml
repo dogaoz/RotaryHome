@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.dogaozkaraca.rotaryhome" >
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="com.android.vending.BILLING" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER" />
+    <uses-permission android:name="android.permission.SET_WALLPAPER_HINTS" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR" />
+    <uses-permission android:name="android.permission.INTERACT_ACROSS_USERS_FULL" />
+    <supports-screens
+        android:smallScreens="true"
+        android:normalScreens="true"
+        android:largeScreens="true"
+        android:xlargeScreens="true"
+        android:anyDensity="true" />
+    <application
+        android:name="android.support.multidex.MultiDexApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <receiver android:name=".ConnectionStatus" >
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".RotaryHome"
+            android:clearTaskOnLaunch="true"
+            android:excludeFromRecents="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".NewsReader"
+            android:label="News Reader"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".FacebookActivity"
+            android:label="Facebook"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".TwitterLogin"
+            android:label="@string/title_activity_twitter_login"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".TumblrLogin"
+            android:label="Tumblr"
+            android:launchMode="singleTask"
+            android:theme="@style/Theme.AppCompat" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="callback" android:scheme="oauthflow-tumblr" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LinkedInLogin"
+            android:label="LinkedIn"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".FlickrLogin"
+            android:label="Flickr"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".FoursquareLogin"
+            android:label="Foursquare"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity android:name="com.facebook.FacebookActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/app_id" />
+
+        <activity
+            android:name=".Settings"
+            android:label="Settings"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".Weather_Settings"
+            android:label="Weather Preferences"
+            android:theme="@style/woTheme" >
+        </activity>
+        <activity
+            android:name=".AboutDO"
+            android:label="@string/title_activity_about_do"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".Do_feed_Settings"
+            android:label="Online Content Settings"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".ColorSchemeSettings"
+            android:label="@string/title_activity_color_scheme_settings"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".InstagramActivity"
+            android:label="@string/title_activity_instagram"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".WebBrowse"
+            android:label="Connect DO to Twitter"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".purchases"
+            android:label="@string/title_activity_purchases"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".rss_feed_settings"
+            android:label="@string/title_activity_rss_feed_settings"
+            android:theme="@style/Theme.AppCompat"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+
+        </activity>
+        <activity
+            android:name=".RotaryHome_FirstSetup"
+            android:label="@string/title_activity_login_into_rotary"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="adjustResize|stateVisible" >
+        </activity>
+        <activity
+            android:name=".rotary_signup"
+            android:label="@string/title_activity_rotary_signup"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".RotaryTeacher"
+            android:label="@string/title_activity_rotary_teacher"
+            android:theme="@style/Theme.AppCompat" >
+        </activity>
+        <activity
+            android:name=".settings_more"
+            android:label="@string/title_activity_settings_more"
+            android:theme="@style/woTheme">
+        </activity>
+        <activity
+            android:launchMode="singleInstance"
+            android:name=".AdMobActivity" />
+        <activity android:name="com.facebook.ads.InterstitialAdActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize" />
+
+        <receiver android:name=".rotaryRefresher">
+        <intent-filter android:priority="999">
+            <action android:name="android.intent.action.PACKAGE_INSTALL"/>
+            <action android:name="android.intent.action.PACKAGE_ADDED"/>
+            <action android:name="android.intent.action.PACKAGE_REMOVED"/>
+            <data android:scheme="package"/>
+        </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

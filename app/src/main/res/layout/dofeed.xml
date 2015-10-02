@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/dofeed_content"
+
+    >
+
+    <dogaozkaraca.SwipeRefreshLayoutRotary
+        android:id="@+id/activity_main_swipe_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+   <GridView
+       android:id="@+id/gridView1"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+
+       android:layout_alignParentLeft="true"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:layout_alignParentBottom="true"
+
+       android:divider="@null"
+       android:minHeight="240dp"
+       android:numColumns="2"
+       android:background="#20000000"
+       android:fastScrollEnabled="false"
+	>
+       </GridView>
+</dogaozkaraca.SwipeRefreshLayoutRotary>
+<!--
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/ad_view2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        android:layout_alignParentBottom="true"
+        ads:adUnitId="@string/banner_ad_unit_id" /> -->
+
+
+
+   <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loadingRelativeLayout"
+       android:layout_alignParentRight="true"
+       android:layout_alignParentTop="true"
+       android:background="@drawable/loading_bg_oval"
+
+       android:layout_centerVertical="true">
+       <!--
+         <net.frakbot.imageviewex.ImageViewEx
+              android:id="@+id/loadingAnimated"
+              android:layout_width="60dp"
+              android:layout_height="60dp"
+              android:layout_centerHorizontal="true"
+              android:layout_marginTop="15dp"
+             android:layout_marginBottom="15dp"
+              android:background="#00000000"/>
+                 -->
+          <TextView
+            android:id="@+id/loadingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:gravity="center"
+              android:shadowColor="#FFFFFF"
+              android:shadowDx="2"
+              android:shadowDy="1"
+              android:shadowRadius="2"
+              android:textSize="12sp"
+              android:layout_centerHorizontal="true"
+              android:layout_centerVertical="true"
+
+              android:layout_marginTop="5dp"
+              android:layout_marginRight="5dp"
+              android:paddingTop="3dp"
+              android:paddingLeft="10dp"
+              android:paddingRight="10dp"
+              android:paddingBottom="3dp"
+            android:text="Loading Feed..."
+            android:textColor="#000000" />
+     <!--
+     <com.google.android.gms.ads.AdView
+         android:id="@+id/ad_view"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_below="@id/loadingText"
+         ads:adSize="BANNER"
+         ads:adUnitId="@string/banner_ad_unit_id" />
+         -->
+       </RelativeLayout>
+
+          </RelativeLayout>

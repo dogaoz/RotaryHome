@@ -1,0 +1,300 @@
+<slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoPanelHeight="40dp"
+    sothree:umanoShadowHeight="4dp"
+    tools:context=".RotaryHome">
+
+    <RelativeLayout  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/rotaryAppChooserRL"
+        >
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/hidden"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="#00000000"
+            android:visibility="invisible"/>
+        <com.dogaozkaraca.rotaryhome.RotaryView
+        android:id="@+id/rotaryView"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+        android:gravity="center" />
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/removeFolderButton"
+            android:background="#00000000"
+            android:src="@drawable/remove_article"
+            android:scaleType="fitXY"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+
+            android:visibility="gone"/>
+        <t.forgotten
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:id="@+id/folderNameText"
+            android:textSize="18dp"
+            android:textColor="#FFF"
+            android:text="Folder Name"
+            android:layout_below="@+id/rotaryView"
+
+            android:visibility="visible"/>
+
+
+
+            <at.markushi.ui.CircleButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_below="@+id/folderNameEditText"
+                android:layout_centerHorizontal="true"
+                android:gravity="center"
+                android:id="@+id/folderColor"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="@string/setfoldername"
+                android:textColorHint="#808080"
+                android:textSize="18dp"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:background="#00000000"
+                android:layout_below="@id/rotaryView"
+                android:id="@+id/folderNameEditText"
+                android:textColor="#FFF"
+                android:visibility="gone"/>
+
+
+        <ImageButton
+            android:id="@+id/assistantButton"
+            android:layout_width="70dp"
+            android:onClick="launchAssistant"
+            android:layout_height="70dp"
+            android:background="#00000000"
+            android:src="@drawable/assistantlight"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"/>
+        <com.dogaozkaraca.rotaryhome.RevealView_DragNdropView
+            android:id="@+id/reveal_viewF"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#0000FF"
+            android:visibility="gone"
+            />
+        <com.dogaozkaraca.rotaryhome.AllAppsGridView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rotary_allapps_gridview"
+            android:layout_below="@+id/connerr"
+            android:layout_marginTop="15dp"
+            android:visibility="gone"
+            android:numColumns="3"
+            />
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageButton"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:src="@drawable/settingsb_white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginTop="15dp" />
+
+        <ImageButton
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:id="@+id/imageButton2"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:onClick="setNotifications"
+            android:src="@drawable/notificationsb_white"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="15dp" />
+
+
+        <include
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:layout_below="@id/imageButton2"
+            layout="@layout/notifications_dialog"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <RelativeLayout
+            android:id="@+id/connerr"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/imageButton"
+            android:layout_alignBottom="@+id/imageButton"
+            android:layout_toRightOf="@+id/imageButton2"
+            android:layout_toLeftOf="@+id/imageButton"
+            android:layout_toStartOf="@+id/imageButton">
+
+
+            <t.forgotten
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="@style/WhiteTextShadowBlack"
+                android:text=""
+                android:id="@+id/textView10"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true" />
+
+        </RelativeLayout>
+        <at.markushi.ui.CircleButton
+            android:id="@+id/allAppsButton"
+            android:layout_width="64dip"
+            android:layout_height="64dip"
+            android:layout_marginBottom="16dp"
+            android:layout_marginRight="16dp"
+
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/all_apps_icon"
+            app:cb_color="#99CC00"
+            android:alpha="1.0"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout  android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/slidingBase"
+       >
+    <RelativeLayout  android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/timeView"
+        >
+
+        <t.forgotten
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/time"
+            android:layout_alignBaseline="@+id/time"
+            android:text="ampm"
+            android:textAppearance="@style/WhiteTextShadowBlack"
+            android:id="@+id/ampm"
+            android:textSize="15sp" />
+    <t.forgotten
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center|top"
+        android:text="12:00"
+        android:textAppearance="@style/WhiteTextShadowBlack"
+        android:id="@+id/time"
+        android:onClick="changeAngle"
+        android:textSize="30sp" />
+
+        <t.forgotten
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="left|top"
+            android:text="Signal"
+            android:layout_alignBaseline="@id/time"
+            android:id="@+id/signal"
+            android:textAppearance="@style/WhiteTextShadowBlack"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="7dp"
+            android:textSize="18sp" />
+        <t.forgotten
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="right|top"
+            android:layout_marginTop="11dp"
+            android:layout_marginRight="7dp"
+            android:text="Wifi"
+            android:layout_alignBaseline="@id/time"
+            android:textAppearance="@style/WhiteTextShadowBlack"
+
+            android:id="@+id/wifi"
+            android:textSize="18sp" />
+        </RelativeLayout>
+     <RelativeLayout
+            android:id="@+id/base_rl"
+         android:layout_below="@id/timeView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                layout="@layout/dofeed" />
+
+            <include
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+
+                layout="@layout/docenter" />
+         <ImageView
+             android:layout_width="match_parent"
+             android:layout_height="385dp"
+             android:id="@+id/art"
+             android:gravity="center"
+
+             android:layout_centerHorizontal="true"
+             android:layout_centerVertical="true"
+             android:background="#ECEEED"
+             android:visibility="gone"
+             />
+
+
+
+
+            <at.markushi.ui.CircleButton
+                android:id="@+id/circleButton"
+                android:layout_width="72dip"
+                android:layout_height="72dip"
+                android:layout_marginBottom="18dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/docenterbtn"
+                app:cb_color="#99CC00"
+                android:alpha="1.0"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+</slidinguppanel.SlidingUpPanelLayout>
+

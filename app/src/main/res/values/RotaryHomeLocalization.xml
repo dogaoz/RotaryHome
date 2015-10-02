@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rss_feed_is_loading">Loading News</string>
+    <string name="facebook_feed_is_loading">Loading Facebook</string>
+    <string name="twitter_feed_is_loading">Loading Twitter</string>
+    <string name="instagram_feed_is_loading">Loading Instagram</string>
+        <string name="linkedin_feed_is_loading">Loading LinkedIn</string>
+    <string name="flickr_feed_is_loading">Loading Flickr</string>
+
+    <string name="tumblr_feed_is_loading">Loading Tumblr</string>
+        <string name="foursquare_feed_is_loading">Loading Foursquare</string>
+    
+    <string name="refresh_plus_refresh_error">Feed is already refreshing.</string>
+    
+        <string name="app_id">731265210226246</string>
+    
+    <!-- Do Launcher Main Settings Page -->
+    <string name="loading">Loading...</string>
+      <string name="online_content">Online Content</string>
+        <string name="personalization">Personalization</string> 
+        <string name="weather">Weather</string>
+        <string name="homescreen">Homescreen</string>
+    <string name="myaccount">My Account</string>
+    <string name="more">More</string>
+        <string name="about">About</string> 
+    <!-- Do Launcher First Setup -->
+    <string name="hi">Hi,</string>
+    <string name="this_is_do_feed">This is Do Feed</string>
+    <string name="stay_updated">Stay updated by accessing your online content in Do Feed</string>
+   	<string name="respect">We wanted to target every android phone user So we are working on every small detail..</string>
+   	<string name="color_scheme_setup">Please Pick your favorite color</string>
+   	<string name="docenter">This is Do Center,shows you a little more information when you slide it.</string>
+   	<string name="connectsocial">Last Few Things,\nConnect to social networks</string>
+   	<string name="setuprss">You\'re good to go\nTouch to button below to choose your news service and finalize setup.</string>
+   	<string name="finishsetup">Choose\nNews Feed</string>
+   	<!-- Do Launcher Things -->
+   	  <!-- General -->
+
+    <string name="restarting">Restarting...</string>
+    <string name="TipDogaFeedRefresh">You can refresh news and weather by pulling dogafeed down.</string>
+    <string name="Dogafeed">Do-Feed</string>
+    <string name="Weather">Weather</string>
+    <string name="Themes">Personalization</string>
+    <string name="Homescreen">Homescreen</string>
+    <string name="Advanced">Advanced</string>
+    <string name="AboutDOLauncher">About DO Launcher</string>
+    <string name="RestartDOLauncher">Restart DO Launcher</string>
+    <string name="Locality">Locality</string>
+    <string name="WeatherSettings">Weather Settings</string>
+    <string name="Celsius">Celsius</string>
+    <string name="Fahrenheit">Fahrenheit</string>
+    <string name="SetLocation">Change Location</string>
+    <string name="currentrss">Current RSS : </string>
+    <string name="experimentaldesc">These options are buggy and experimental \nIf you\'re normal user. \nI don\'t recommend to activate these options.</string>
+    <string name="experimentaldrawer">Experimental Drawer</string>
+    <string name="AddCustomRSS">Add Custom RSS</string>
+    <string name="WeatherLocation">Weather Location</string>
+    <string name="EnterYourLocation">Enter Your Location :</string>
+    <string name="Enable">Enable</string>
+    <string name="Disable">Disable</string>
+    <!-- Themes -->
+    <string name="refreshing">Refreshing...</string>
+    <string name="themesetup">Theme Set ! \nRefresh Do-Feed for seeing applied theme.</string>
+    <string name="rsssetup">RSS Feed Set !</string>
+    <string name="LocationSetUp">Location set up !</string>
+    <!-- About DO -->
+
+    <string name="aboutdo">dogaozkaraca.com for more...\n \nCredits For Some Resources: \n \n-SplitShire.com\nDaniel Nanescu for fantastic wallpapers that i used in RotaryHome App.</string>
+
+	<!-- DO Launcher Version -->
+    <string name="version">[DEV]</string>
+
+    <!-- Customizations -->
+    <string name="EnableDockonDO">Enable Dock on Do-Feed</string>
+    <string name="DisableDockonDO">Disable Dock on Do-Feed \u2606 PRO \u2606</string>
+    <string name="CustomDock">Custom Dock \u2606 PRO \u2606</string>
+    <string name="CustomTheme">Custom Theme \u2606 PRO \u2606</string>
+    <string name="CustomAppDrawerIcon">Custom App Drawer Icon \u2606 PRO \u2606</string>
+
+
+    
+    
+    <!-- Activity Titles -->
+    <string name="title_activity_experimental__settings">Experimental Settings</string>
+    <string name="title_activity_fragment">Fragment</string>
+    <string name="title_activity_homescreensettings">More...</string>
+    <string name="title_activity_facebook">Facebook &amp; DO</string>
+    <string name="title_activity_twitter">Twitter</string>
+    <string name="title_activity_twitter_login">Twitter</string>
+    <string name="title_activity_choose_rss_service">Choose RSS Service</string>
+    <string name="title_activity_logoutfb">Logoutfb</string>
+    <string name="title_activity_instagram">Instagram</string>
+    <string name="title_activity_do_icon_packs">DoIconPacks</string>
+    <string name="title_activity_icon_picker">IconPickerActivity</string>
+    <string name="title_activity_cwlayout_chooser">Choose Clock Style</string>
+    <string name="title_activity_first_setup_init">Welcome</string>
+    <string name="title_activity_color_scheme_settings">Colors</string>
+    <string name="title_activity_about_do">About</string>
+    <string name="turkey">Turkey</string>
+    <string name="all_countries">World</string>
+    <string name="united_states">United States</string>
+    <string name="united_kingdom">United Kingdom</string>
+    <string name="title_activity_login_into_rotary">Sign into RotaryHome Services</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="server_conn_failure">Cannot connect to RotaryHome Services</string>
+
+    <!-- RotaryHome -->
+
+    <string name="leave_blank">(Leave blank to not set)</string>
+    <string name="setfoldername">Set Folder Name</string>
+
+
+
+
+
+
+</resources>

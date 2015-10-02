@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:id="@+id/notifications_dialog"
+    android:clickable="true"
+>
+
+    <RelativeLayout
+        android:id="@+id/weather_status_textRL"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/weather_bg_oval"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp">
+        <t.forgotten
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="There is an error occurred!\nError code:901\nNothing loaded!"
+            android:gravity="center"
+            android:id="@+id/errordetails"
+            android:textSize="16sp"
+            android:textColor="#000"
+
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/weatherRL_ro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/weather_status_textRL"
+
+        android:visibility="visible">
+        <RelativeLayout
+            android:id="@+id/weatherTodayRL"
+            android:layout_width="match_parent"
+            android:layout_height="115dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:visibility="visible"
+            android:background="@drawable/weather_bg_oval">
+
+            <ImageView
+                android:id="@+id/imageofweatherInsideToday"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/pack_01"
+                android:layout_toRightOf="@+id/textView17"
+                android:layout_toLeftOf="@+id/textView19"
+
+                android:layout_above="@+id/weathertextDAYtoday"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+
+            <t.forgotten
+                android:id="@+id/weathertextDAYtoday"
+
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:layout_width="wrap_content"
+                android:textColor="#7b7b7b"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:text="Today"
+                android:layout_alignParentLeft="true"
+                />
+
+            <t.forgotten
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:text="Pressure : \nHumidity :\nWind :\nWind Speed:"
+                android:paddingLeft="15dp"
+                android:textColor="#7b7b7b"
+
+                android:gravity="center|left"
+                android:id="@+id/textView17"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                />
+            <t.forgotten
+                android:layout_width="95dp"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Max: \nMin: \nClouds:"
+                android:paddingRight="15dp"
+                android:textColor="#7b7b7b"
+                android:textSize="13dp"
+
+                android:gravity="center|right"
+                android:id="@+id/textView19"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                />
+
+
+        </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/slideUpRLno12"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_below="@id/weatherTodayRL"
+
+        android:layout_marginTop="5dp"
+
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/weather_bg_oval">
+
+        <ImageView
+            android:id="@+id/imageofweatherInside"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView195"
+            android:layout_toStartOf="@+id/textView195" />
+
+
+
+
+        <t.forgotten
+            android:id="@+id/textView195"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="00\u00B0C"
+            android:textColor="#7b7b7b"
+            android:layout_above="@+id/weathertextDAY"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:textSize="40sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_alignParentRight="true" />
+
+
+        <t.forgotten
+            android:id="@+id/weathertextDAY"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="#7b7b7b"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Next Day"
+            android:layout_alignParentLeft="true"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/slideUpRLno2"
+        android:layout_below="@id/slideUpRLno12"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginTop="5dp"
+
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="@drawable/weather_bg_oval">
+
+        <ImageView
+            android:id="@+id/imageofweatherInside2"
+            android:layout_width="115dp"
+            android:layout_height="115dp"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/textView196"
+            android:layout_toStartOf="@+id/textView196" />
+
+
+
+
+        <t.forgotten
+            android:id="@+id/textView196"
+            android:layout_width="wrap_content"
+            android:layout_height="70dp"
+            android:text="00\u00B0C"
+            android:textColor="#7b7b7b"
+            android:layout_above="@+id/weathertextDAY2"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:textSize="40sp"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_alignParentRight="true" />
+
+
+        <t.forgotten
+            android:id="@+id/weathertextDAY2"
+
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingRight="10dp"
+            android:layout_width="wrap_content"
+            android:textColor="#7b7b7b"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:text="Next Day"
+            android:layout_alignParentLeft="true"
+             />
+
+
+
+    </RelativeLayout>
+    </RelativeLayout>
+    <at.markushi.ui.CircleButton
+        android:id="@+id/circleButtonRF"
+        android:layout_width="64dip"
+        android:layout_height="64dip"
+        android:src="@drawable/ic_action_refresh"
+        app:cb_color="#99CC00"
+        android:onClick="refreshWeather"
+        android:layout_below="@+id/weatherRL_ro"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
