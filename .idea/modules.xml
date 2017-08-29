@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/RotaryHome.iml" filepath="$PROJECT_DIR$/RotaryHome.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/blurringview/blurringview.iml" filepath="$PROJECT_DIR$/blurringview/blurringview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/CircleButton/library/circleButtonLibrary.iml" filepath="$PROJECT_DIR$/CircleButton/library/circleButtonLibrary.iml" />
       <module fileurl="file://$PROJECT_DIR$/circleindicator/circleIndicatorForFirstSetup.iml" filepath="$PROJECT_DIR$/circleindicator/circleIndicatorForFirstSetup.iml" />
       <module fileurl="file://$PROJECT_DIR$/circularImageViewReal/circularImageViewReal.iml" filepath="$PROJECT_DIR$/circularImageViewReal/circularImageViewReal.iml" />
       <module fileurl="file://$PROJECT_DIR$/dataDroid/dataDroid.iml" filepath="$PROJECT_DIR$/dataDroid/dataDroid.iml" />

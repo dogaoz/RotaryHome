@@ -1,5 +1,4 @@
-include ':app', ':library2', ':CircleButtonLibrary', ':circleButtonLibrary', ':blurringview', ':circleIndicatorForFirstSetup', ':facebook'
-project(':library2').projectDir = new File('CircleButton/library')
+include ':app', ':CircleButtonLibrary', ':circleButtonLibrary', ':blurringview', ':circleIndicatorForFirstSetup', ':facebook'
 include ':circularImageViewReal'
 include ':foursquare_Library'
 include ':dataDroid'
