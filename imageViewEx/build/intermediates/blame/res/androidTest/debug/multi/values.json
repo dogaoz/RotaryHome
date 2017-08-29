@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/doga/RotaryHome/imageViewEx/build/intermediates/incremental/mergeDebugAndroidTestResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 412,
+                    "endColumn": 48,
+                    "endOffset": 456
+                },
+                "from": {
+                    "file": "/Users/doga/RotaryHome/imageViewEx/build/intermediates/bundles/debug/res/values/values.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 412,
+                        "endColumn": 48,
+                        "endOffset": 456
+                    }
+                }
+            }
+        ]
+    }
+]

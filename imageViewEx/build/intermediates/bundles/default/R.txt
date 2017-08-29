@@ -1,0 +1,12 @@
+int attr adjustViewBounds 0x7f010000
+int attr emptyDrawable 0x7f010001
+int attr fillDirection 0x7f010002
+int drawable ic_launcher 0x7f020000
+int id horizontal 0x7f040000
+int id none 0x7f040001
+int id vertical 0x7f040002
+int string app_name 0x7f030000
+int[] styleable ImageViewEx { 0x7f010000, 0x7f010001, 0x7f010002 }
+int styleable ImageViewEx_adjustViewBounds 0
+int styleable ImageViewEx_emptyDrawable 1
+int styleable ImageViewEx_fillDirection 2

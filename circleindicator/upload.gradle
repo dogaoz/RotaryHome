@@ -1,0 +1,15 @@
+apply plugin: 'maven'
+apply plugin: 'signing'
+
+group = "me.relex"
+
+configurations {
+    archives {
+        extendsFrom configurations.default
+    }
+}
+
+signing {
+    required { has("release") && gradle.taskGraph.hasTask("uploadArchives") }
+    sign configurations.archives
+}

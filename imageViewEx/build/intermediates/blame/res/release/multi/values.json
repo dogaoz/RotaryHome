@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/doga/RotaryHome/imageViewEx/build/intermediates/incremental/mergeReleaseResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 412,
+                    "endColumn": 48,
+                    "endOffset": 456
+                },
+                "from": {
+                    "file": "/Users/doga/RotaryHome/imageViewEx/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 48,
+                        "endOffset": 100
+                    }
+                }
+            }
+        ]
+    }
+]
